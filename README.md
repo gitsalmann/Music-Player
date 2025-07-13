@@ -2,8 +2,8 @@
 
 A sleek and fully functional **Music Player** built using **HTML**, **CSS**, and **JavaScript**. This web app allows users to play, pause, switch songs, control volume, view song thumbnails, see song info, and track progress with a dynamic duration bar.
 
-![Music Player Screenshot]<img width="1920" height="1080" alt="Screenshot (40)" src="https://github.com/user-attachments/assets/985740dc-4903-4e66-836a-e1c82c2fee89" />
- <!-- Optional: Replace with your image -->
+![Music Player Screenshot]<img width="1920" height="930" alt="Screenshot (40)" src="https://github.com/user-attachments/assets/20a5a03a-0552-4b98-95fd-325ba8c4724e" />
+
 
 ---
 
