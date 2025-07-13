@@ -1,0 +1,295 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+  width: 100vw;
+  height: 80px;
+  background-color: rgb(15, 15, 15);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+
+}
+
+header h2{
+  color: rgb(27, 219, 226);
+}
+main{
+  width: 100%;
+  height: calc(100vh - 80px);
+  background-color: rgb(31, 33, 35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.left{
+  width: 50%;
+  height: 100%;
+  /* background-color: aliceblue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.song-image{
+  width: 280px;
+  height: 280px;
+  /* background-color: black; */
+  border-radius: 50%;
+  background-image: url(kamleya.jpg);
+  background-size: cover;
+  box-shadow: 2px 2px 10px black,
+     -2px -2px 10px black;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.volume-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+
+/*
+ #volume-range{
+  -webkit-appearance: none;
+}
+#volume-range::-webkit-slider-runnable-track{
+    width: 350px;
+    height: 10px;
+     border: none; 
+     border-radius: 8px; 
+     background: linear-gradient(to right, rgb(12, 201, 22),rgb(15, 188, 188)); 
+    }
+    
+    #volume-range::-webkit-slider-thumb{
+      margin: -3px;
+      color: brown;
+      border: none; 
+    }
+    */
+
+
+#volume-range{
+  -webkit-appearance: none;
+  width: 30%;
+  border-radius: 5px;
+  height: 4%;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgb(110, 72, 72),
+  -2px -2px 10px rgb(0, 0, 0);
+  background: linear-gradient(to right,rgb(37, 114, 92),rgb(126, 41, 143))
+
+}
+
+#volume-range::-webkit-slider-thumb{
+  -webkit-appearance: none;
+    border: 2px solid white;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+     box-shadow: 2px 2px 10px rgb(110, 72, 72),
+  -2px -2px 10px rgb(0, 0, 0);
+    background: rgb(229, 211, 17);
+  cursor: pointer;
+    /* margin-top: -4px; */
+}
+
+#volume-range::-webkit-slider-thumb:hover{
+  transform: scale(120%);
+}
+
+.volume-img{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: transparent;
+  box-shadow: 2px 2px 10px rgba(93, 92, 92, 0.8),
+  -2px -2px 10px rgba(0, 0, 0, 0.8),
+  -2px -2px 10px rgba(0, 0, 0, 0.8),
+  -2px -2px 10px rgba(0, 0, 0, 0.8);
+}
+.right{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.details{
+  width: 80%;
+  height: 100px;
+  background-color: transparent;
+    box-shadow: 2px 2px 10px rgba(93, 92, 92, 0.8),
+  -2px -2px 10px rgba(0, 0, 0 ),
+  -2px -2px 10px rgba(0, 0, 0),
+  -2px -2px 10px rgba(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 25px;
+}
+#song-name{
+  font-size: 30px;
+  color: rgb(34, 161, 60);
+}
+#song-singer{
+  font-size: 15px;
+  color: aliceblue
+}
+
+#song-duration{
+  -webkit-appearance: none;
+  width: 60%;
+  border-radius: 5px;
+  height: 6px;
+  cursor: pointer;
+   box-shadow: 2px 2px 10px rgb(110, 72, 72),
+  -2px -2px 10px rgb(0, 0, 0);
+  background: linear-gradient(to right,rgb(37, 114, 92),rgb(126, 41, 143))
+
+    
+}
+
+#song-duration::-webkit-slider-thumb{
+  -webkit-appearance: none;
+    border: 2px solid white;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+     box-shadow: 2px 2px 10px rgb(110, 72, 72),
+  -2px -2px 10px rgb(0, 0, 0);
+    background: rgb(229, 211, 17);
+  cursor: pointer;
+    /* margin-top: -4px; */
+}
+
+.controls{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;justify-content: center;
+  gap: 20px;
+}
+.prev-img,.play-pause,.next-img{
+   width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: transparent;
+  box-shadow: 2px 2px 10px rgba(93, 92, 92, 0.8),
+  -2px -2px 10px rgba(0, 0, 0, 0.8),
+  -2px -2px 10px rgba(0, 0, 0, 0.8),
+  -2px -2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.prev-img:hover,.play-pause:hover,.next-img:hover{
+    box-shadow: inset 2px 2px 10px rgba(93, 92, 92, 0.8),
+  inset -2px -2px 10px rgba(0, 0, 0, 0.8), 
+ inset -2px -2px 10px rgba(0, 0, 0, 0.8),
+ inset -2px -2px 10px rgba(0, 0, 0, 0.8);
+ transform: scale(80%);
+}
+
+#music-anim{
+  position: absolute;
+  width: 100px;
+  height: 200px;
+  mix-blend-mode: lighten;
+  /* filter: drop-shadow(2px 4px 10px rgb(9, 111, 132)); */
+  display: none;
+  margin-top: 100px;
+  margin-right: 80px;
+}
+.playlist{
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  background-color: rgba(0 , 0, 0, 0.328);
+  left: 0;
+  backdrop-filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 0.5s;
+  box-shadow: 2px 2px 10px black;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+.playlist-active{
+   transform: translateX(0);
+}
+.playlist-song{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background-color: rgba(240, 255, 245, 0.237);
+  gap: 20px;
+  cursor: pointer;
+}
+
+
+.playlist-song:hover{
+  background-color: rgba(45, 100, 149, 0.699);
+}
+
+.playlist-song img{
+  width: 100px;
+  border-radius: 0px 20px 20px 0px;
+    box-shadow: 2px 2px 10px black;
+  
+  }
+.song-details{
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.playlist-song h2{
+  color: rgba(35, 198, 73, 0.567);
+}
+.playlist-song h5{
+  color: rgba(240, 248, 255, 0.403);
+}
+#playlist-img{
+  cursor: pointer;
+}
+
+@media (max-width:700px) {
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+  .left,.right{
+    width: 100%;
+  }
+  .song-image{
+    width: 60vw;
+    height: 60vw;
+    margin-top: 20px;
+  }
+  .playlist{
+    width: 100%;
+  }
+}
